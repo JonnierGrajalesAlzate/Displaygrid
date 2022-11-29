@@ -1,0 +1,128 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+      "nav nav nav nav"
+      "sidebar main main main"
+      "sidebar content1 content2 content3"
+      "sidebar footer footer footer";
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+  }
+  
+  nav {
+    background-image: url(https://i.pinimg.com/originals/cf/d3/28/cfd328ab7c3a9a05230469d7cfd00e87.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    color: white;
+  }
+  
+  main {
+    background-image: url(https://i.ytimg.com/vi/BTtBmo5EbEk/maxresdefault.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    color: white;
+  }
+  
+  #sidebar {
+    background-image: url(https://w0.peakpx.com/wallpaper/988/843/HD-wallpaper-bryant-myers-bryantmyers.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    color: white;
+  }
+  
+  #content1 {
+    background-image: url(https://i.pinimg.com/564x/83/3e/a8/833ea86d8cc4a6912aff95f903bd81a8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    color: white;
+  }
+  
+  #content2 {
+    background-image: url(https://d2ihb3jisuaxvo.cloudfront.net/wp-content/uploads/2019/12/01202550/10-1024x585.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    color: white;
+  }
+  
+  #content3 {
+    background-image: url(https://i.ytimg.com/vi/FAlg7ZBExas/maxresdefault.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    color: white;
+  }
+  
+  footer {
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-textura-hormigon-negro_53876-145151.jpg?auto=format&h=200);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    color: white;
+  }
+  
+  a {
+    text-align: center;
+    display: block;
+    font-family: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+      grid-template-areas:
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
+  }
+  
